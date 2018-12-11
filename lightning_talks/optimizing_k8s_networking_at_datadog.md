@@ -11,7 +11,7 @@
     1. Native Load-Balancer
     2. Still a bit young
     3. More efficient than iptables
-2. No briding
+2. No bridging
     1. Route on the host
     2. Specific NI plugins
     3. Better latency
