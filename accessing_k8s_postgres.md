@@ -27,3 +27,5 @@ Pass in a kubeconfig, and create a table (see graphic).
 Use JSONPATH to pull out information from advanced json replies from k8s api
 
 This is really cool. See if we can get ahold of the slides for this one. 
+
+`github.com/liztio/k8s-fdw`
