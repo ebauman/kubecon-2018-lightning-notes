@@ -24,3 +24,16 @@ in memory db            on-disk db
 load time               read time
 ```
 
+![bare metal control](IMG_5787.JPG)
+
+![ephemeral storage](IMG_5788.JPG)
+
+![cloud provider storage](IMG_5790.JPG)
+
+![containerized storage](IMG_5793.JPG)
+
+![glusterfs](IMG_5794.JPG)
+
+![ceph + rook](IMG_5795.JPG)
+
+![conclusions](IMG_5796.JPG)
