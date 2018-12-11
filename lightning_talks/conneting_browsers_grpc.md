@@ -32,3 +32,16 @@ The answer, right now, is no.
 - response trailers are not supported
 - web-specific features: CORS, security(CSRF/CSP), etc.
 - Firewall, corporate proxies, etc. 
+
+## gRPC-Wen Spec
+- Aux protocol providing a translation layer between browser requests and gRPC
+- Currently, the spec is implemented in Envoy. More to come
+- Over HTTP/*, as negotiated by browsers
+- ... (missed notes)
+
+Graphic showing that basically, server side uses envoy as person-in-the-middle, and client (browser) connects to Envoy
+
+# gRPC-Web
+- GA since Oct 18
+- grpc.io
+- Used internally at Google
