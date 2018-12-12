@@ -1,6 +1,8 @@
 # Kubernetes at Reddit: An Origin Story
 Greg Taylor - EM, Reddit Infrastructure
 u/gctaylor
+@gctaylor
+github.com/gtaylor
 
 ---
 
@@ -154,3 +156,28 @@ Obeservability by *default*:
 - Exception/error tracking
     - Sentry
 - Central logging and analysis
+
+*The tooling is supported by training and documentation*
+
+## Operate: Recap
+
+Service owners have:
+- Explicitly defined responsibilities
+- Enough access to own their services
+- Guardrails to prevent+limit damage
+- Tools needed to respond to and diagnose issues
+
+# What does all of this buy us? 
+
+> A service owner ~~should be~~ *is able* to develop, deploy, and operate their service. Regardless of engineering background. 
+
+- 7 k8s clusters
+- ~30% of our engineering teams 
+- ~20 production services
+- 10-20 deploys a day
+
+New services on K8s by default in Q1 2019!
+
+## Closing Remarks
+
+> reddit.com/jobs
