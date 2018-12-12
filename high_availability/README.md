@@ -41,8 +41,29 @@ Zones are failure domains within regions. Different cooling, etc.
 
 ## 01 Application HA
 
-[this entire talk can be summed up as: run it across failure domains]
+- Add pod labels as to where the pods are going to live (e.g. AZ)
+- Add anti-affinity labels so the pods don't start in AZs they don't belong to
 
-What is "it"? 
+## 02 Control Plane HA
 
-Yes. 
+- apiserver
+    - apiserver is completely stateless, so all master nodes can run it active-active. LB in front of it, and you're done
+- scheduler & controller-manager
+    - within k8s, a locking system exists so that scheduler and controller manager instances have only one active at a time. active-passive
+- configuring leader election
+    ```
+    --leader-elect
+    --leader-elect-lease-duration
+    ...
+    ```
+
+- Managing the control plane
+    - unsolved problems
+        - health checking
+        - failure recovery
+        - upgrades without downtime
+    - options to explore:
+        - hosted solution
+        - managed instance groups
+        - build your own monitoring server
+        - k8s itself! 
